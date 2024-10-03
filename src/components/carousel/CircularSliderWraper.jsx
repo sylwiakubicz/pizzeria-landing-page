@@ -1,6 +1,6 @@
 import React from 'react';
 import CircularSliderItem from './CircularSliderItem';
-import { useCarouselData } from '../hooks/useCarouselData';
+import { useCarouselData } from '../../hooks/useCarouselData';
 
 const CircularSliderWraper = ({activeIndex, rotate, handleMauseEnter, handleMauseLeave}) => {
 

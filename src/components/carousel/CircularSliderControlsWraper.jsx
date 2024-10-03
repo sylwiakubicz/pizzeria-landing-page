@@ -1,6 +1,6 @@
 import React from 'react'
 import CircularSliderControlsItem from './CircularSliderControlsItem'
-import { useCarouselData } from '../hooks/useCarouselData'
+import { useCarouselData } from '../../hooks/useCarouselData'
 
 const CircularSliderControlsWraper = ({activeIndex, handleControlClick}) => {
 

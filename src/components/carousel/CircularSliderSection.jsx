@@ -1,8 +1,8 @@
 import React from 'react'
 import CircularSliderWraper from './CircularSliderWraper'
 import CircularSliderControlsWraper from './CircularSliderControlsWraper'
-import '../styles/circularSlider.css'
-import { useCarousel } from '../hooks/useCarousel';
+import '../../styles/circularSlider.css'
+import { useCarousel } from '../../hooks/useCarousel';
 
 
 const CircularSliderSection = () => {

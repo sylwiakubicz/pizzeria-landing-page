@@ -1,5 +1,5 @@
 import './App.css';
-import CircularSliderSection from './components/CircularSliderSection';
+import CircularSliderSection from './components/carousel/CircularSliderSection';
 
 function App() {
   return (
