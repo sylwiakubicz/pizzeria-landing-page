@@ -1,9 +1,59 @@
 .footer {
-    height: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #111821;
     color: white;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+    font-size: medium;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 1rem;
+    font-size: x-large;
+    padding: 1.3rem;
+}
+
+.iconsContainer a {
+    cursor: pointer;
+}
+
+.listContainer {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.listContainer a {
+    position: relative;
+    cursor: pointer;
+}
+
+.listContainer a::before {
+    content: "";
+    width: 0;
+    height: .1rem;
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: -.1rem;
+    transition: width .3s ease-in-out;
+}
+
+.listContainer a:hover::before {
+    width: 100%;
+}
+
+.listContainer a:not(:last-child)::after {
+    content: "";
+    background: #fff;
+    height: 1.3rem;
+    width: .1rem;
+    display: block;
+    position: absolute;
+    top: .35rem;
+    right: -.75rem;
 }

@@ -9,18 +9,26 @@ function Footer() {
 
     return (
         <div className='footer'>
-            <div>
+            <div className='listContainer'>
                 <a>About us</a>
-                <a>About us</a>
-                <a>About us</a>
-                <a>About us</a>
-                <a>About us</a>
+                <a>Special offerts</a>
+                <a>Find us in your region</a>
+                <a>Ingredient list</a>
+                <a>Allergens and energy</a>
+                <a>Privacy policy</a>
+                <a>Terms and conditions</a>
             </div>
-            <div>
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faTiktok} />
-
+            <p>Follow us on:</p>
+            <div className='iconsContainer'>
+                <a>
+                    <FontAwesomeIcon icon={faInstagram}/>
+                </a>
+                <a>
+                    <FontAwesomeIcon icon={faFacebook}/>
+                </a>
+                <a>
+                    <FontAwesomeIcon icon={faTiktok}/>
+                </a>
             </div>
             <p>© {today.getFullYear()} Lorem, ipsum.</p>
         </div>
