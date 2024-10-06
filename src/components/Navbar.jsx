@@ -9,16 +9,16 @@ const Navbar = () => {
             <h2 className='logo'>Lorem, ipsum.</h2>
             <ul className='navList'>
                 <li>
-                    <a>Home</a>
+                    <a href='#home'>Home</a>
                 </li>
                 <li>
-                    <a>Menu</a>
+                    <a href='#menu'>Menu</a>
                 </li>
                 <li>
-                    <a>Special & Coupons</a>
+                    <a href='#special'>Special & Coupons</a>
                 </li>
                 <li>
-                    <a>Find us</a>
+                    <a href='#map'>Find us</a>
                 </li>
             </ul>
             <ul className='navIcons'>
