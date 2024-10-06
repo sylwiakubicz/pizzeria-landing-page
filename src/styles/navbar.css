@@ -1,0 +1,39 @@
+nav {
+    background-color: #111821;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    font-size: large;
+    cursor: pointer;
+}
+
+.navList li {
+    font-size: medium;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.navIcons {
+    font-size: large;
+}
+
+.navIcons li {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: .15rem  solid white;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin: .7rem;
+}
+
