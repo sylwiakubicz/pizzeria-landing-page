@@ -5,9 +5,12 @@
     align-items: center;
     background-color: #111821;
     color: white;
-    padding-bottom: 6rem;
-    padding-top: 3rem;
+    padding: 3rem;
     font-size: medium;
+}
+
+.footer p:first-of-type {
+    padding-top: 1.3rem;
 }
 
 .iconsContainer {
@@ -24,7 +27,6 @@
 .listContainer {
     display: flex;
     gap: 1.5rem;
-    padding-bottom: 3rem;
 }
 
 .listContainer a {
