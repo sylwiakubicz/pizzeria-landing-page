@@ -48,17 +48,17 @@
     background: #585d63;
 }
 
+.cartIcon {
+    font-size: 10rem;
+    color: #585d63;
+    padding-bottom: 1rem;
+}
+
 .emptyCart {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.cartIcon {
-    font-size: 10rem;
-    color: #585d63;
-    padding-bottom: 1rem;
 }
 
 .emptyCart h3 {
