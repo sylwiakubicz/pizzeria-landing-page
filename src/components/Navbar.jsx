@@ -3,7 +3,7 @@ import "../styles/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = ({handleShowSideBar}) => {
+const Navbar = ({handleShowSideBar, setTypeOfSideBar}) => {
     const [showNavbar, setShowNavbar] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
     const [activeSection, setActiveSection] = useState('home')
@@ -67,10 +67,18 @@ const Navbar = ({handleShowSideBar}) => {
             </ul>
             <ul className='navIcons'>
                 <li>
-                    <FontAwesomeIcon icon={faCartShopping} onClick={handleShowSideBar}/>
+                    <FontAwesomeIcon icon={faCartShopping} 
+                    onClick={() => {
+                        handleShowSideBar()
+                        setTypeOfSideBar('cart')
+                    }}/>
                 </li>
                 <li>
-                    <FontAwesomeIcon icon={faPhone} onClick={handleShowSideBar}/>
+                    <FontAwesomeIcon icon={faPhone}  
+                    onClick={() => {
+                        handleShowSideBar()
+                        setTypeOfSideBar('contact')
+                    }}/>
                 </li>
             </ul>
         </nav>

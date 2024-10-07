@@ -8,15 +8,17 @@ import { useState } from 'react';
 function App() {
 
   const [showSideBar, setShowSideBar] = useState(false)
+  const [typeOfSideBar, setTypeOfSideBar] = useState('')
 
   const handleShowSideBar = () => {
     setShowSideBar(prev => !prev)
   }
+
   return (
     <div>
-      <Navbar handleShowSideBar={handleShowSideBar}/>
-      <CircularSliderSection />
-      <SideBar showSideBar={showSideBar}/>
+      <Navbar handleShowSideBar={handleShowSideBar} setTypeOfSideBar={setTypeOfSideBar}/>
+      <CircularSliderSection/>
+      <SideBar showSideBar={showSideBar} typeOfSideBar={typeOfSideBar}/>
       <Footer />
     </div>
   );
