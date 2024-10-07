@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/sideBar.css'
 
-const SideBar = () => {
+const SideBar = ({showSideBar}) => {
     return (
-        <div className='sideBarContainer'>
+        <div className={`sideBarContainer ${showSideBar ? 'visible' : 'hidden'}`}>
             
         </div>
     )
