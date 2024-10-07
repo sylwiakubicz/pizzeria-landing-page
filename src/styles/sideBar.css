@@ -7,7 +7,7 @@
     width: 55rem;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     transition: transform 0.3s ease-in-out;
-    padding-top: 12rem;
+    padding-top: 7rem;
     color: #fff;
 }
 
@@ -17,4 +17,57 @@
 
 .sideBarContainer.hidden {
     transform: translateX(100%);
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.costSummary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 166, 1);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 8rem;
+    font-size: x-large;
+}
+
+.sidebarHeader {
+    height: 8rem;
+    font-size: xx-large;
+    font-weight: normal;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    align-content: center;
+    background: #585d63;
+}
+
+.emptyCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartIcon {
+    font-size: 10rem;
+    color: #585d63;
+    padding-bottom: 1rem;
+}
+
+.emptyCart h3 {
+    font-size: large;
+    font-weight: normal;
+    padding-bottom: .2rem;
+}
+
+.emptyCart p {
+    color: #585d63;
+    font-size: medium;
 }
