@@ -6,6 +6,7 @@ import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [activeSection, setActiveSection] = useState('home')
 
     const handleScroll = () => {
         if (window.scrollY > lastScrollY) {
@@ -23,21 +24,45 @@ const Navbar = () => {
         };
     }, [lastScrollY]);
 
+    useEffect(() => {
+        const sections = document.querySelectorAll('section');
+        const options = {
+            root: null,
+            threshold: 0.6,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach(section => observer.unobserve(section));
+        };
+    }, []);
+
     return (
         <nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
             <h2 className='logo'>Lorem, ipsum.</h2>
             <ul className='navList'>
                 <li>
-                    <a href='#home'>Home</a>
+                    <a href='#home' className={activeSection === 'home' ? 'active' : ''}>Home</a>
                 </li>
                 <li>
-                    <a href='#menu'>Menu</a>
+                    <a href='#menu' className={activeSection === 'menu' ? 'active' : ''}>Menu</a>
                 </li>
                 <li>
-                    <a href='#special'>Special & Coupons</a>
+                    <a href='#special' className={activeSection === 'special' ? 'active' : ''}>Special & Coupons</a>
                 </li>
                 <li>
-                    <a href='#map'>Find us</a>
+                    <a href='#map' className={activeSection === 'map' ? 'active' : ''}>Find us</a>
                 </li>
             </ul>
             <ul className='navIcons'>
