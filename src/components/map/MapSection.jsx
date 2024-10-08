@@ -4,10 +4,10 @@ import './mapSection.css'
 
 const MapSection = () => {
     return (
-        <div className='mapSection' id="map">
+        <section className='mapSection' id="map">
             <Map />
             <img src='/images/placeholderImage.jpg' />
-        </div>
+        </section>
     )
 }
 
