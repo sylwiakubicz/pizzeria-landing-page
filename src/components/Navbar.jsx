@@ -2,8 +2,13 @@ import React, { useState, useEffect } from 'react';
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useDispatch } from 'react-redux';
+import {toggleSidebarAction} from '../redux/toggleSidebar/toggleSidebarSlice';
 
-const Navbar = ({handleShowSideBar, setTypeOfSideBar}) => {
+const Navbar = () => {
+
+    const dispatch = useDispatch();
+
     const [showNavbar, setShowNavbar] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
     const [activeSection, setActiveSection] = useState('home')
@@ -67,18 +72,15 @@ const Navbar = ({handleShowSideBar, setTypeOfSideBar}) => {
             </ul>
             <ul className='navIcons'>
                 <li>
-                    <FontAwesomeIcon icon={faCartShopping} 
-                    onClick={() => {
-                        handleShowSideBar()
-                        setTypeOfSideBar('cart')
-                    }}/>
+                    <FontAwesomeIcon 
+                        icon={faCartShopping} 
+                        onClick={() => dispatch(toggleSidebarAction('cart'))}/>
                 </li>
                 <li>
-                    <FontAwesomeIcon icon={faPhone}  
-                    onClick={() => {
-                        handleShowSideBar()
-                        setTypeOfSideBar('contact')
-                    }}/>
+                    <FontAwesomeIcon 
+                        icon={faPhone}  
+                        onClick={() => dispatch(toggleSidebarAction('contact'))}/>
+
                 </li>
             </ul>
         </nav>
