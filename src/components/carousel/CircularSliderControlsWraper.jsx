@@ -7,11 +7,21 @@ const CircularSliderControlsWraper = ({activeIndex, handleControlClick}) => {
   const {carouselData} = useCarouselData()
 
   return (
-    <div className='controls'>
+    <div className='controls' aria-label="Pizza slider controls">
       {
-        carouselData.map((pizza, index) => (
-          <CircularSliderControlsItem index={index + 1} activeIndex={activeIndex} handleControlClick={handleControlClick} imageSrc={pizza.image}/>
-        ))
+        carouselData.map((pizza, index) => {
+          const isSelected = activeIndex === index + 1;
+          return (
+            <CircularSliderControlsItem 
+              key={pizza.name} 
+              index={index + 1} 
+              activeIndex={activeIndex} 
+              handleControlClick={handleControlClick} 
+              imageSrc={pizza.image} 
+              aria-label={`Pizza ${index + 1} control`} 
+              aria-selected={isSelected}/>
+          )
+      })
       }
     </div>
   )

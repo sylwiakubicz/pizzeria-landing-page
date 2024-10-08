@@ -7,8 +7,17 @@ const CircularSliderControlsItem = ({index, activeIndex, handleControlClick, ima
     handleControlClick(index)
   }
 
+  const isSelected = activeIndex === index;
+  
   return (
-    <a href="#" data-index={index} className={activeIndex === index ? 'active' : ''} onClick={handleClick}>
+    <a 
+      href="#" 
+      data-index={index} 
+      className={activeIndex === index ? 'active' : ''} 
+      onClick={handleClick}
+      aria-label={`Pizza ${index}`} 
+      aria-selected={isSelected}
+      role="tab">
       <img src={imageSrc} alt={`Pizza ${index + 1}`}/>
     </a>
   )

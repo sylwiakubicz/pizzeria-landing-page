@@ -13,33 +13,36 @@ const Navbar = () => {
     const activeSection = useActiveSection();  
 
     return (
-        <nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
+<nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
             <h2 className='logo'>Lorem, ipsum.</h2>
             <ul className='navList'>
                 <li>
-                    <a href='#home' className={activeSection === 'home' ? 'active' : ''}>Home</a>
+                    <a href='#home' className={activeSection === 'home' ? 'active' : ''} aria-label="Go to Home section">Home</a>
                 </li>
                 <li>
-                    <a href='#menu' className={activeSection === 'menu' ? 'active' : ''}>Menu</a>
+                    <a href='#menu' className={activeSection === 'menu' ? 'active' : ''} aria-label="Go to Menu section">Menu</a>
                 </li>
                 <li>
-                    <a href='#special' className={activeSection === 'special' ? 'active' : ''}>Special & Coupons</a>
+                    <a href='#special' className={activeSection === 'special' ? 'active' : ''} aria-label="Go to Special & Coupons section">Special & Coupons</a>
                 </li>
                 <li>
-                    <a href='#map' className={activeSection === 'map' ? 'active' : ''}>Find us</a>
+                    <a href='#map' className={activeSection === 'map' ? 'active' : ''} aria-label="Go to Find Us section">Find us</a>
                 </li>
             </ul>
             <ul className='navIcons'>
                 <li>
                     <FontAwesomeIcon 
                         icon={faCartShopping} 
-                        onClick={() => dispatch(toggleSidebarAction('cart'))}/>
+                        onClick={() => dispatch(toggleSidebarAction('cart'))}
+                        aria-label="Open cart" 
+                        role="button" />
                 </li>
                 <li>
                     <FontAwesomeIcon 
                         icon={faPhone}  
-                        onClick={() => dispatch(toggleSidebarAction('contact'))}/>
-
+                        onClick={() => dispatch(toggleSidebarAction('contact'))}
+                        aria-label="Contact us" 
+                        role="button" />
                 </li>
             </ul>
         </nav>

@@ -10,9 +10,18 @@ const CircularSliderSection = () => {
   const { rotate, j, handleMauseEnter, handleMauseLeave, handleControlClick } = useCarousel(); 
 
   return (
-    <section className='slideSection' id="menu">
-      <CircularSliderWraper rotate={rotate} activeIndex={j.current} handleMauseEnter={handleMauseEnter} handleMauseLeave={handleMauseLeave}/>
-      <CircularSliderControlsWraper activeIndex={j.current} handleControlClick={handleControlClick}/>
+    <section className='slideSection' id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title" className="visually-hidden">Menu</h2>
+      <CircularSliderWraper 
+        rotate={rotate} 
+        activeIndex={j.current} 
+        handleMauseEnter={handleMauseEnter} 
+        handleMauseLeave={handleMauseLeave} 
+        aria-label="Circular slider showcasing menu items"/>
+      <CircularSliderControlsWraper 
+        activeIndex={j.current} 
+        handleControlClick={handleControlClick} 
+        aria-label="Circular slider controls"/>
     </section>
   )
 }
