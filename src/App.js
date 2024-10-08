@@ -3,7 +3,7 @@ import CircularSliderSection from './components/carousel/CircularSliderSection';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SideBar from './components/sidebar/SideBar'
-import MapSection from './components/MapSection';
+import MapSection from './components/map/MapSection';
 
 const App = () => {
   return (
