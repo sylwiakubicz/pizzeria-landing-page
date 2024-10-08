@@ -1,42 +1,16 @@
-import React, { useState, useEffect } from 'react';
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
 import {toggleSidebarAction} from '../redux/toggleSidebar/toggleSidebarSlice';
 import { useScrollDirection } from '../hooks/useScrollDirection';
+import { useActiveSection } from '../hooks/useActiveSection';
 
 const Navbar = () => {
 
     const dispatch = useDispatch();
     const showNavbar = useScrollDirection();
-
-    const [activeSection, setActiveSection] = useState('home')
-
-    
-    useEffect(() => {
-        const sections = document.querySelectorAll('section');
-        const options = {
-            root: null,
-            threshold: 0.6,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        }, options);
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-
-        return () => {
-            sections.forEach(section => observer.unobserve(section));
-        };
-    }, []);
+    const activeSection = useActiveSection();  
 
     return (
         <nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
