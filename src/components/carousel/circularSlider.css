@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
+    padding-left: 28rem;
+    padding-right: 28rem;
 }
 
 .carousel {
