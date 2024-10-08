@@ -4,31 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
 import {toggleSidebarAction} from '../redux/toggleSidebar/toggleSidebarSlice';
+import { useScrollDirection } from '../hooks/useScrollDirection';
 
 const Navbar = () => {
 
     const dispatch = useDispatch();
+    const showNavbar = useScrollDirection();
 
-    const [showNavbar, setShowNavbar] = useState(true)
-    const [lastScrollY, setLastScrollY] = useState(0)
     const [activeSection, setActiveSection] = useState('home')
 
-    const handleScroll = () => {
-        if (window.scrollY > lastScrollY) {
-            setShowNavbar(false);
-        } else {
-            setShowNavbar(true);
-        }
-        setLastScrollY(window.scrollY);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [lastScrollY]);
-
+    
     useEffect(() => {
         const sections = document.querySelectorAll('section');
         const options = {
