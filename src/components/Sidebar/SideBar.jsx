@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/sideBar.css'
+import './sideBar.css'
 import Contact from './Contact'
 import Cart from './Cart'
 
