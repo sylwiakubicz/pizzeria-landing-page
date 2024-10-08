@@ -11,7 +11,7 @@ const Cart = () => {
             <h3>Cart is empty</h3>
             <p>Add a dish to continue</p>
         </div>
-        <div className='costSummary'>
+        <div className='sidebarFooter'>
             <p>Order</p>
             <p>0.00 $</p>
         </div>

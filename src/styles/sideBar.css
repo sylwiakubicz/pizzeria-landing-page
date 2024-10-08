@@ -26,7 +26,7 @@
     height: 100%;
 }
 
-.costSummary {
+.sidebarFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;

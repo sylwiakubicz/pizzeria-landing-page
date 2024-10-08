@@ -2,7 +2,7 @@ import './App.css';
 import CircularSliderSection from './components/carousel/CircularSliderSection';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import SideBar from './components/SideBar';
+import SideBar from './components/Sidebar/SideBar';
 import { useState } from 'react';
 
 function App() {
