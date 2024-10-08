@@ -13,10 +13,9 @@ const CircularSliderWraper = ({activeIndex, rotate, handleMauseEnter, handleMaus
           onMouseLeave={handleMauseLeave}
           aria-live="polite"
           tabIndex="0"
-          aria-labelledby="carousel-title" 
+          aria-label="carousel-title" 
           role="region"
     >
-      <h2 id="carousel-title" className="visually-hidden">Pizza Menu</h2>
       {
         carouselData.map((pizza, index) => (
           <CircularSliderItem key={pizza.name} index={index + 1} activeIndex={activeIndex} imageSrc={pizza.image} aria-label={`Pizza ${pizza.name}`}/>
