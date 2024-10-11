@@ -20,9 +20,9 @@ const App = () => {
   return (
     <div>
       <Navbar/>
+      <SideBar/>
       <CircularSliderSection/>
       <MenuSection />
-      <SideBar/>
       <MapSection />
       <Footer />
     </div>
