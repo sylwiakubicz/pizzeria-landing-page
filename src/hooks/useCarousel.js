@@ -1,18 +1,20 @@
 import { useEffect, useState, useRef } from "react"; 
 
-export function useCarousel() {
+export function useCarousel(totalItems) {
     const i = useRef(0); 
     const j = useRef(1); 
     const [rotate, setRotate] = useState(0); 
     const [isPaused, setIsPaused] = useState(false); 
+    const rotationAngle = parseInt(360 / totalItems)
 
     useEffect(() => {
         const intervalId = setInterval(() => {
+            console.log(totalItems)
             console.log(isPaused)
             if (!isPaused) {
                 i.current += 1
-                setRotate(i.current * 45);
-                j.current = (j.current === 8 ? 1 : j.current + 1);
+                setRotate(i.current * rotationAngle);
+                j.current = (j.current === totalItems ? 1 : j.current + 1);
 
                 console.log(`i: ${i.current}, rotate: ${rotate}, j: ${j.current}`);
             }

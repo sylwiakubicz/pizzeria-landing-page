@@ -7,7 +7,7 @@ import { useCarousel } from '../../hooks/useCarousel';
 
 const CircularSliderSection = () => {
 
-  const { rotate, j, handleMauseEnter, handleMauseLeave, handleControlClick } = useCarousel(); 
+  const { rotate, j, handleMauseEnter, handleMauseLeave, handleControlClick } = useCarousel(8); 
 
   return (
     <section className='slideSection' id="menu" aria-labelledby="menu-title">
