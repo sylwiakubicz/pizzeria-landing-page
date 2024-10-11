@@ -1,0 +1,40 @@
+.menuSection {
+    padding-left: 28rem;
+    padding-right: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.menuSection h3 {
+    font-weight: normal;
+    color: orange;
+    font-size: medium;
+}
+
+.menuSection h2 {
+    font-size: x-large;
+}
+
+.menuCategories {
+    padding-top: 1rem;
+}
+
+.menuCategories button {
+    color: orange;
+    border: 1px solid orange;
+    background-color: #fff;
+    border-radius: 2rem;
+    width: 12rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: large;
+    font-weight: normal;
+}
+
+.menuCategories button.active {
+    color: #fff;
+    background: orange;
+}
