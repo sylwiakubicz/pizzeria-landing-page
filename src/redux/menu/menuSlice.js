@@ -16,7 +16,7 @@ export const menuSlice = createSlice({
     }
 })
 
-export const {} = menuSlice.actions;
+export const {setMenuData, setCategoryS} = menuSlice.actions;
 
 export const selectCategory = (state) => state.menu.selectedCategory;
 export const selectMenuData = (state) => state.menu.menuData;
