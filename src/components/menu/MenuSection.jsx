@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuCategories from './MenuCategories';
 import "./menu.css"
+import MenuDisplay from './MenuDisplay';
 
 const MenuSection = () => {
     return (
@@ -8,6 +9,7 @@ const MenuSection = () => {
             <h3>OUR MENU</h3>
             <h2>Discover Our Menu</h2>
             <MenuCategories />
+            <MenuDisplay />
         </section>
     )
 }
