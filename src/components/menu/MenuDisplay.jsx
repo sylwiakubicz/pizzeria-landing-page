@@ -25,17 +25,21 @@ const MenuDisplay = () => {
 
     return (
         <div className="menuDisplay">
-        {itemsToDisplay.map((item, index) => (
-            <div key={index} className="menuItem">
-            <h3>{item.name}</h3>
-            {item.price && typeof item.price === 'object' ? (
-                <p>Small: ${item.price.small} | Large: ${item.price.large}</p>
-            ) : (
-                <p>Price: ${item.price}</p>
-            )}
-            {item.ingredients && <p>Ingredients: {item.ingredients.join(', ')}</p>}
-            </div>
-        ))}
+            {selectedCategory !== 'additionals' ? <p>Small | Large*</p> : <p>Price:</p>}
+            {itemsToDisplay.map((item, index) => (
+                <div key={index} className="menuItem">
+                    <div>
+                        <h3>{item.name}</h3>
+                        {item.price && typeof item.price === 'object' ? (
+                            <p>${item.price.small.toFixed(2)} | ${item.price.large.toFixed(2)}</p>
+                        ) : (
+                            <p>${item.price.toFixed(2)}</p>
+                        )}
+                    </div>
+                    {item.ingredients && <p>{item.ingredients.join(', ')}</p>}
+                </div>
+            ))}
+            {selectedCategory !== 'additionals' &&  (selectedCategory === "pizzas" ? <p className='addinionalInformation'>*Small: ⌀26cm | Large: ⌀40cm</p> : <p className='addinionalInformation'>*Small: 0.33l | Large: 0.5l</p>)}
         </div>
     );
 }

@@ -3,9 +3,11 @@
     padding-right: 28rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 4rem;
+    height: calc(100vh - 7rem);
+    width: 100%;
+    position: relative;
 }
 
 .menuSection h3 {
@@ -38,4 +40,41 @@
 .menuCategories button.active {
     color: #fff;
     background: orange;
+}
+
+.menuDisplay {
+    width: 100%;
+}
+
+.menuDisplay p:first-child {
+    text-align: right;
+    font-size: large;
+}
+
+.menuItem {
+    padding-top: 3rem;
+}
+
+.menuItem div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuItem h3 {
+    font-size: x-large;
+}
+
+.menuItem div p {
+    font-size: large;
+}
+
+.menuItem p {
+    font-size: medium;
+}
+
+.addinionalInformation {
+    position: absolute;
+    bottom: 0;
+    font-size: small;
 }
