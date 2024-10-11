@@ -5,8 +5,18 @@ import Footer from './components/Footer';
 import SideBar from './components/sidebar/SideBar'
 import MapSection from './components/map/MapSection';
 import MenuSection from './components/menu/MenuSection'
+import { useDispatch } from 'react-redux';
+import {setMenuData} from './redux/menu/menuSlice'
+import { useEffect } from 'react';
+import menuData from './api/menu.json';
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setMenuData(menuData.menu));
+  }, [dispatch]);
+
   return (
     <div>
       <Navbar/>
