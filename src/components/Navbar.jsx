@@ -20,6 +20,9 @@ const Navbar = () => {
                     <a href='#home' className={activeSection === 'home' ? 'active' : ''} aria-label="Go to Home section">Home</a>
                 </li>
                 <li>
+                    <a href='#pizzas' className={activeSection === 'pizzas' ? 'active' : ''} aria-label="Go to pizzas section">Our pizzas</a>
+                </li>
+                <li>
                     <a href='#menu' className={activeSection === 'menu' ? 'active' : ''} aria-label="Go to Menu section">Menu</a>
                 </li>
                 <li>

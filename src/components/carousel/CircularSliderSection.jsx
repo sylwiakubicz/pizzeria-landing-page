@@ -10,7 +10,7 @@ const CircularSliderSection = () => {
   const { rotate, j, handleMauseEnter, handleMauseLeave, handleControlClick } = useCarousel(8); 
 
   return (
-    <section className='slideSection' id="menu" aria-labelledby="menu-title">
+    <section className='slideSection' id="pizzas" aria-labelledby="menu-title">
       <h2 id="menu-title" className="visually-hidden">Menu</h2>
       <CircularSliderWraper 
         rotate={rotate} 
