@@ -1,6 +1,6 @@
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
 import {toggleSidebarAction} from '../redux/toggleSidebar/toggleSidebarSlice';
 import { useScrollDirection } from '../hooks/useScrollDirection';
@@ -33,13 +33,6 @@ const Navbar = () => {
                 </li>
             </ul>
             <ul className='navIcons'>
-                <li>
-                    <FontAwesomeIcon 
-                        icon={faCartShopping} 
-                        onClick={() => dispatch(toggleSidebarAction('cart'))}
-                        aria-label="Open cart" 
-                        role="button" />
-                </li>
                 <li>
                     <FontAwesomeIcon 
                         icon={faPhone}  

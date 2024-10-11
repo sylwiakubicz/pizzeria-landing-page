@@ -1,12 +1,11 @@
 import React from 'react'
 import './sideBar.css'
 import Contact from './Contact'
-import Cart from './Cart'
 import { useSelector } from 'react-redux';
 
 const SideBar = () => {
 
-    const { showSidebar, sidebarType } = useSelector(state => state.toggleSidebar);
+    const { showSidebar } = useSelector(state => state.toggleSidebar);
 
     return (
         <div 
@@ -15,12 +14,8 @@ const SideBar = () => {
             aria-modal="true" 
             aria-labelledby="sidebar-title"
         >
-            <h2 id="sidebar-title" className="visually-hidden">
-                {sidebarType === 'contact' ? 'Contact Information' : 'Cart Details'}
-            </h2>
-            {
-                sidebarType === 'contact' ? <Contact /> : <Cart />
-            }
+            <h2 id="sidebar-title" className="visually-hidden">Contact Information</h2>
+            <Contact /> 
         </div>
     )
 }

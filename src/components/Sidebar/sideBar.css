@@ -9,6 +9,7 @@
     transition: transform 0.3s ease-in-out;
     padding-top: 7rem;
     color: #fff;
+    z-index: 10;
 }
 
 .sideBarContainer.visible {
