@@ -82,11 +82,12 @@
 .controls {
     position: sticky;
     bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .controls a {
     padding: 1rem;
-    display: inline-block;
     border-radius: 10rem;
     width: 17rem;
     height: 17rem;
@@ -106,7 +107,7 @@
 .pizzaDesc {
     position: absolute;
     bottom: 30rem;
-    left: 28rem;
+    left: 29rem;
 }
 
 .pizzaDesc h3 {
