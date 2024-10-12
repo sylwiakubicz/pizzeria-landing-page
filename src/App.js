@@ -10,6 +10,7 @@ import {setMenuData} from './redux/menu/menuSlice'
 import { useEffect } from 'react';
 import menuData from './api/menu.json';
 import SpecialsSection from './components/specials/SpecialsSection';
+import Banner from './components/banner/Banner';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ const App = () => {
     <div>
       <Navbar/>
       <SideBar/>
+      <Banner />
       <CircularSliderSection/>
       <MenuSection />
       <SpecialsSection />

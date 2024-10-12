@@ -1,0 +1,11 @@
+.banner {
+    height: 70rem;
+    background-color: rgba(17, 24, 33, .99);
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    top: -45rem;
+}
