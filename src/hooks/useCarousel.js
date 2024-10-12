@@ -24,7 +24,7 @@ export function useCarousel(totalItems) {
 
             }
 
-        }, 4000);
+        }, 8000);
 
         return () => clearInterval(intervalId); 
     }, [isPaused, rotate, j.current]); 
