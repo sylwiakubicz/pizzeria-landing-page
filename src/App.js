@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import {setMenuData} from './redux/menu/menuSlice'
 import { useEffect } from 'react';
 import menuData from './api/menu.json';
+import SpecialsSection from './components/specials/SpecialsSection';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ const App = () => {
       <SideBar/>
       <CircularSliderSection/>
       <MenuSection />
+      <SpecialsSection />
       <MapSection />
       <Footer />
     </div>
