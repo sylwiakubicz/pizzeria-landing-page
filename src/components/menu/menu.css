@@ -75,6 +75,6 @@
 
 .addinionalInformation {
     position: absolute;
-    bottom: 0;
+    bottom: 1.5rem;
     font-size: small;
 }
