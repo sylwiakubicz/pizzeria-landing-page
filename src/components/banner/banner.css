@@ -1,11 +1,58 @@
 .banner {
     height: 70rem;
-    background-color: rgba(17, 24, 33, .99);
+    background-color: rgba(17, 24, 33, .98);
     position: relative;
+    color: #fff;
+    padding-left: 28rem;
+    padding-right: 28rem;
+    align-content: center;
 }
 
-.banner img {
+.banner img.border {
+    height: 5rem;
     width: 100%;
+    z-index: 1000;
     position: absolute;
-    top: -45rem;
+    bottom: 0;
+    left: 0;
+}
+
+.banner img:first-child {
+    width: 150rem;
+    position: absolute;
+    top: -10rem;
+    right: -4rem;
+}
+
+.bannerText {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+.bannerText h1 {
+    font-size: xx-large;
+    padding-bottom: 1rem;
+} 
+
+.banner span.color{
+    color: orange;
+}
+
+.banner p {
+    font-size: medium;
+    padding-bottom: 3rem;
+}
+
+.bannerText button {
+    color: #fff;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 2rem;
+    width: 18rem;
+    height: 5rem;
+    margin: 1rem;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
 }
