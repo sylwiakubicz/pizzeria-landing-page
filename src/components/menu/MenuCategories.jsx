@@ -14,17 +14,17 @@ function MenuCategories() {
     return (
         <div className='menuCategories'>
             <button 
-                className={selectedCategory === 'pizzas' ? 'active' : ''}
+                className={selectedCategory === 'pizzas' ? 'active' : 'gradientText'}
                 onClick={() => handleCategoryClick('pizzas')}>
                     Pizzas
             </button>
             <button 
-                className={selectedCategory === 'drinks' ? 'active' : ''}
+                className={selectedCategory === 'drinks' ? 'active' : 'gradientText'}
                 onClick={() => handleCategoryClick('drinks')}>
                     Drinks
             </button>
             <button 
-                className={selectedCategory === 'additionals' ? 'active' : ''}
+                className={selectedCategory === 'additionals' ? 'active' : 'gradientText'}
                 onClick={() => handleCategoryClick('additionals')}>
                     Additionals
             </button>

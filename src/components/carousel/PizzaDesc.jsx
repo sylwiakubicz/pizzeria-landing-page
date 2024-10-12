@@ -7,7 +7,7 @@ function PizzaDesc({currentPizzaIndex}) {
 
     return (
         <div className='pizzaDesc'>
-            <h3>{menuData.carouselData[currentPizzaIndex].name}</h3>
+            <h3 className='gradientText'>{menuData.carouselData[currentPizzaIndex].name}</h3>
             <p>{menuData.carouselData[currentPizzaIndex].ingredients.join(', ')}</p>    
         </div>
     )

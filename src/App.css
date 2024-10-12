@@ -28,3 +28,9 @@ a {
 body{
     padding-top:  7rem;
 }
+
+.gradientText {
+    background: -webkit-linear-gradient(45deg,orange, rgb(255, 230, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

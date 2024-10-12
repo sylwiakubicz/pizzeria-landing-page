@@ -6,7 +6,7 @@ import MenuDisplay from './MenuDisplay';
 const MenuSection = () => {
     return (
         <section id="menu" className='menuSection'> 
-            <h3>OUR MENU</h3>
+            <h3 className='gradientText'>OUR MENU</h3>
             <h2>Discover Our Menu</h2>
             <MenuCategories />
             <MenuDisplay />

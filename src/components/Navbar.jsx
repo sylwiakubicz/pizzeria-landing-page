@@ -17,23 +17,23 @@ const Navbar = () => {
             <h2 className='logo'>Lorem, ipsum.</h2>
             <ul className='navList'>
                 <li>
-                    <a href='#home' className={activeSection === 'home' ? 'active' : ''} aria-label="Go to Home section">Home</a>
+                    <a href='#home' className={activeSection === 'home' ? 'gradientText' : ''} aria-label="Go to Home section">Home</a>
                 </li>
                 <li>
-                    <a href='#pizzas' className={activeSection === 'pizzas' ? 'active' : ''} aria-label="Go to pizzas section">Our pizzas</a>
+                    <a href='#pizzas' className={activeSection === 'pizzas' ? 'gradientText' : ''} aria-label="Go to pizzas section">Our pizzas</a>
                 </li>
                 <li>
-                    <a href='#menu' className={activeSection === 'menu' ? 'active' : ''} aria-label="Go to Menu section">Menu</a>
+                    <a href='#menu' className={activeSection === 'menu' ? 'gradientText' : ''} aria-label="Go to Menu section">Menu</a>
                 </li>
                 <li>
-                    <a href='#special' className={activeSection === 'special' ? 'active' : ''} aria-label="Go to Special & Coupons section">Special & Coupons</a>
+                    <a href='#special' className={activeSection === 'special' ? 'gradientText' : ''} aria-label="Go to Special & Coupons section">Special & Coupons</a>
                 </li>
                 <li>
-                    <a href='#map' className={activeSection === 'map' ? 'active' : ''} aria-label="Go to Find Us section">Find us</a>
+                    <a href='#map' className={activeSection === 'map' ? 'gradientText' : ''} aria-label="Go to Find Us section">Find us</a>
                 </li>
             </ul>
             <ul className='navIcons'>
-                <li>
+                <li >
                     <FontAwesomeIcon 
                         icon={faPhone}  
                         onClick={() => dispatch(toggleSidebarAction('contact'))}

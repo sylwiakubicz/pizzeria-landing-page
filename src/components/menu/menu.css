@@ -8,11 +8,12 @@
     height: calc(100vh - 7rem);
     width: 100%;
     position: relative;
+    background-color: rgba(17, 24, 33, .98);
+    color: #fff;
 }
 
 .menuSection h3 {
     font-weight: normal;
-    color: orange;
     font-size: medium;
 }
 
@@ -25,9 +26,8 @@
 }
 
 .menuCategories button {
-    color: orange;
     border: 1px solid orange;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 2rem;
     width: 12rem;
     height: 4rem;
@@ -39,7 +39,8 @@
 
 .menuCategories button.active {
     color: #fff;
-    background: orange;
+    background: linear-gradient(135deg,orange 50%, rgb(255, 230, 0));
+    border: 1px solid transparent;
 }
 
 .menuDisplay {

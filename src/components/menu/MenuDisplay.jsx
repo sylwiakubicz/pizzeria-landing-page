@@ -29,7 +29,7 @@ const MenuDisplay = () => {
             {itemsToDisplay.map((item, index) => (
                 <div key={index} className="menuItem">
                     <div>
-                        <h3>{item.name}</h3>
+                        <h3 className='gradientText'>{item.name}</h3>
                         {item.price && typeof item.price === 'object' ? (
                             <p>${item.price.small.toFixed(2)} | ${item.price.large.toFixed(2)}</p>
                         ) : (

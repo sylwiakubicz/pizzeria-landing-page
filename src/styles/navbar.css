@@ -54,7 +54,3 @@ ul {
     cursor: pointer;
     color: orange;
 }
-
-.navList a.active {
-    color: orange;
-}
