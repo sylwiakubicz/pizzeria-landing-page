@@ -10,7 +10,6 @@ const Banner = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse voluptatum nisi, labore ad blanditiis eveniet maiores dicta, perspiciatis a facilis exercitationem velit! Voluptatibus, exercitationem.</p>
                 <button>Order now</button>
             </div>
-            <img className='border' src="/images/wooden-bg.png"/> 
         </section>
     )
 }

@@ -8,15 +8,6 @@
     align-content: center;
 }
 
-.banner img.border {
-    height: 5rem;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .banner img:first-child {
     width: 150rem;
     position: absolute;

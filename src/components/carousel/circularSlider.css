@@ -1,5 +1,5 @@
 .slideSection {
-    background-color: antiquewhite;
+    background-color: rgba(17, 24, 33);
     height: calc(100vh - 7rem);
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@
 .pizzaDesc {
     position: absolute;
     bottom: 30rem;
-    left: 29rem;
+    left: 28rem;
 }
 
 .pizzaDesc h3 {
@@ -117,4 +117,5 @@
 
 .pizzaDesc p {
     font-size: large;
+    color: #fff;
 }
