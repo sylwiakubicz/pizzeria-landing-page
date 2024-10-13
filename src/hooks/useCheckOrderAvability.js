@@ -4,8 +4,10 @@ export function useCheckOrderAvailability() {
     const [availabilityMessage, setAvailabilityMessage] = useState("");
 
     useEffect(() => {
+        const now = new Date();
+        const minutes = now.getMinutes();
+
         const checkAvailability = () => {
-            const now = new Date();
             const dayOfWeek = now.getDay();
             const currentHour = now.getHours();
             
@@ -32,7 +34,7 @@ export function useCheckOrderAvailability() {
 
         checkAvailability();
 
-        const intervalId = setInterval(checkAvailability, 60 * 60 * 1000);
+        const intervalId = setInterval(checkAvailability, (60 - minutes) * 60 * 1000);
 
         return () => clearInterval(intervalId);
     }, []);
