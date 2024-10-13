@@ -1,6 +1,6 @@
 .mapSection {
     width: 100%;
-    background: #fff;
+    background-color: rgba(17, 24, 33, .98);
     padding-left: 28rem;
     padding-right: 28rem;
     display: grid;
