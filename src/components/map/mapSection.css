@@ -17,19 +17,29 @@
     object-fit: cover;
 }
 
-
-@media (max-width: 1240px) {
+@media (max-width: 1400px) {
     .mapSection {
         padding-left: 10rem;
         padding-right: 10rem;
+    }
+}
+
+
+@media (max-width: 1240px) {
+    .mapSection {
         min-height: 40rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mapSection {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
 @media (max-width: 768px) {
     .mapSection {
-        padding-left: 5rem;
-        padding-right: 5rem;
         grid-template-columns: 1fr;
     }
 

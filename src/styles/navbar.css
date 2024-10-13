@@ -82,3 +82,25 @@ svg {
     animation-duration: .5s;
     outline: none;
 }
+
+
+@media (max-width: 1400px) {
+    .navbar {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
