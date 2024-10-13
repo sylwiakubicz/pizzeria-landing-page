@@ -12,20 +12,26 @@ const MenuCategories = () => {
     };
 
     return (
-        <div className='menuCategories'>
+        <div className='menuCategories' role="navigation" aria-label="Menu Categories">
             <button 
                 className={selectedCategory === 'pizzas' ? 'active' : 'gradientText'}
-                onClick={() => handleCategoryClick('pizzas')}>
+                onClick={() => handleCategoryClick('pizzas')}
+                aria-pressed={selectedCategory === 'pizzas'}
+                aria-label="Select Pizzas Category">
                     Pizzas
             </button>
             <button 
                 className={selectedCategory === 'drinks' ? 'active' : 'gradientText'}
-                onClick={() => handleCategoryClick('drinks')}>
+                onClick={() => handleCategoryClick('drinks')}
+                aria-pressed={selectedCategory === 'drinks'}
+                aria-label="Select Drinks Category">
                     Drinks
             </button>
             <button 
                 className={selectedCategory === 'additionals' ? 'active' : 'gradientText'}
-                onClick={() => handleCategoryClick('additionals')}>
+                onClick={() => handleCategoryClick('additionals')}
+                aria-pressed={selectedCategory === 'additionals'}
+                aria-label="Select Additionals Category">
                     Additionals
             </button>
         </div>
