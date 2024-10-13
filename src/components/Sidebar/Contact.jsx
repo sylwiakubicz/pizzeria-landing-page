@@ -1,9 +1,12 @@
 import React from 'react'
+import {useCheckOrderAvailability} from "../../hooks/useCheckOrderAvability"
 
 const Contact = () => {
+
+    const message = useCheckOrderAvailability()
     return (
         <div className='contact'>
-            <h1 className='gradientText'>Order Now!</h1>
+            <h1 className='gradientText'>{message}</h1>
             <div>
                 <h2>Opening hours</h2>
                 <ul className='openInfo'>
