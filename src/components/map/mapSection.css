@@ -5,7 +5,7 @@
     padding-right: 28rem;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    height: 70rem;
+    min-height: 60rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -15,4 +15,32 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+@media (max-width: 1240px) {
+    .mapSection {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        min-height: 40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mapSection {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .mapSection img {
+        display: none;
+    }
+}
+@media (max-width: 640px) {
+    .mapSection {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 }
