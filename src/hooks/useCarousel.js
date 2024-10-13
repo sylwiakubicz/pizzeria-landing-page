@@ -1,6 +1,10 @@
 import { useEffect, useState, useRef } from "react"; 
+import { useActiveSection } from "./useActiveSection";
 
 export function useCarousel(totalItems) {
+
+    const activeSection = useActiveSection();  
+
     const i = useRef(0); 
     const j = useRef(1); 
     const [rotate, setRotate] = useState(0); 
@@ -21,13 +25,20 @@ export function useCarousel(totalItems) {
             else {
                 clearInterval(intervalId)
                 console.log(`i: ${i.current}, rotate: ${rotate}, j: ${j.current}`);
-
             }
 
         }, 5000);
 
         return () => clearInterval(intervalId); 
     }, [isPaused, rotate, j.current]); 
+
+    useEffect(() => {
+        if (activeSection !== 'pizzas') {
+            setIsPaused(true)
+        } else {
+            setIsPaused(false)
+        }
+    }, [activeSection])
 
     const handleMauseEnter = () => {
         setIsPaused(true)
