@@ -54,3 +54,8 @@ ul {
     cursor: pointer;
     color: orange;
 }
+
+svg {
+    color: #111821;
+    background-image: linear-gradient(135deg,orange 30%, rgb(248, 195, 18))
+}

@@ -14,7 +14,7 @@
 .carousel {
     height: 120rem;
     width: 120rem;
-    border-width: 7rem solid rgb(255, 166, 57);
+    border: 7rem solid rgb(255, 166, 57);
     border-radius: 100%;
     display: flex;
     flex-shrink: 0;
@@ -101,7 +101,7 @@
 }
 
 .controls a.active {
-    background: linear-gradient(135deg,orange 50%, rgb(255, 230, 0));
+    background: linear-gradient(135deg,orange,  rgb(253, 202, 34));
 }
 
 .pizzaDesc {

@@ -34,7 +34,7 @@
 .bannerText button {
     color: #fff;
     border: 1px solid transparent;
-    background: linear-gradient(135deg,orange 50%, rgb(255, 230, 0));
+    background: linear-gradient(135deg,orange, rgb(253, 202, 34));
     border-radius: 2rem;
     width: 18rem;
     height: 5rem;

@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import {toggleSidebarAction} from '../redux/toggleSidebar/toggleSidebarSlice';
 import { useScrollDirection } from '../hooks/useScrollDirection';
 import { useActiveSection } from '../hooks/useActiveSection';
+import { faSquareFull } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 
@@ -33,12 +34,13 @@ const Navbar = () => {
                 </li>
             </ul>
             <ul className='navIcons'>
-                <li >
+                <li>
                     <FontAwesomeIcon 
                         icon={faPhone}  
                         onClick={() => dispatch(toggleSidebarAction('contact'))}
                         aria-label="Contact us" 
-                        role="button" />
+                        role="button"
+                        mask={faSquareFull} />
                 </li>
             </ul>
         </nav>
