@@ -36,10 +36,11 @@
     border: 1px solid transparent;
     background: linear-gradient(135deg,orange, rgb(253, 202, 34));
     border-radius: 2rem;
-    width: 18rem;
-    height: 5rem;
+    width: 16rem;
+    height: 4rem;
     margin: 1rem;
     font-size: large;
     font-weight: bold;
     cursor: pointer;
+    filter: drop-shadow(0 0 10px rgba(253, 202, 34, .7));
 }
