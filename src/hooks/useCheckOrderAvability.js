@@ -9,8 +9,6 @@ export function useCheckOrderAvailability() {
             const dayOfWeek = now.getDay();
             const currentHour = now.getHours();
             
-            console.log("Checking availability...");
-
             if (dayOfWeek === 0) {
                 if (currentHour >= 12 && currentHour < 19) {
                     setAvailabilityMessage("Order Now");

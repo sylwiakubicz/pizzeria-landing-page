@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {setCategory, selectCategory } from '../../redux/menu/menuSlice'
 
-function MenuCategories() {
+const MenuCategories = () => {
 
     const dispatch = useDispatch();
     const selectedCategory = useSelector(selectCategory);
