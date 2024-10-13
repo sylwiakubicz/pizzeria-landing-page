@@ -38,7 +38,7 @@
     content: "";
     width: 0;
     height: .1rem;
-    background: #fff;
+    background: linear-gradient(45deg,orange,rgb(253, 202, 34));
     display: block;
     position: absolute;
     bottom: -.1rem;
@@ -47,6 +47,12 @@
 
 .listContainer a:hover::before {
     width: 100%;
+}
+
+.listContainer a:hover {
+    background: -webkit-linear-gradient(45deg,orange,rgb(253, 202, 34));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .listContainer a:not(:last-child)::after {
@@ -59,3 +65,4 @@
     top: .35rem;
     right: -.75rem;
 }
+

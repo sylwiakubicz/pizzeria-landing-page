@@ -37,6 +37,11 @@ ul {
     font-size: large;
     padding: 1.5rem;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.navList li:hover {
+    scale: 1.05;
 }
 
 .navIcons {
@@ -55,7 +60,25 @@ ul {
     color: orange;
 }
 
+@keyframes phoneRing {
+    0% {rotate: 15deg;}
+    20% {rotate: -15deg;}
+    40% {rotate: 15deg;}
+    60% {rotate: -15deg;}
+    80% {rotate: 15deg;}
+    100% {rotate: -15deg;}
+}
+
 svg {
     color: #111821;
-    background-image: linear-gradient(135deg,orange 30%, rgb(248, 195, 18))
+    background-image: linear-gradient(135deg,orange 30%, rgb(248, 195, 18));
+    rotate: 0;
+    outline: none;
+    border: 1px solid #111821;
+}
+
+.navIcons li:hover {
+    animation-name: phoneRing;
+    animation-duration: .5s;
+    outline: none;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faSquareFull } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
 
@@ -21,13 +22,13 @@ function Footer() {
             <p>Follow us on:</p>
             <div className='iconsContainer'>
                 <a href="https://www.instagram.com" aria-label="Follow us on Instagram">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram} mask={faSquareFull}/>
                 </a>
                 <a href="https://www.facebook.com" aria-label="Follow us on Facebook">
-                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faFacebook} mask={faSquareFull}/>
                 </a>
                 <a href="https://www.tiktok.com" aria-label="Follow us on TikTok">
-                    <FontAwesomeIcon icon={faTiktok} />
+                    <FontAwesomeIcon icon={faTiktok} mask={faSquareFull}/>
                 </a>
             </div>
             <p>© {today.getFullYear()} Lorem, ipsum.</p>
