@@ -26,7 +26,7 @@ const MenuDisplay = () => {
     return (
         <div className="menuDisplay" role="region" aria-labelledby="menu-title">
             <h2 id="menu-title" className="visually-hidden">Menu Items</h2>
-            {selectedCategory !== 'additionals' ? <p>Small | Large*</p> : <p>Price:</p>}
+            {selectedCategory !== 'additionals' ? <p className='additionals'>Small | Large*</p> : <p className='additionals'>Price:</p>}
             {itemsToDisplay.map((item, index) => (
                 <div key={index} className="menuItem">
                     <div>
