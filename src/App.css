@@ -34,3 +34,12 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+hr {
+    height: 18rem;
+    width: 100%;
+    background-image: url(/public/images/wooden-bg-v3.png);
+    background-size:110% 100%;
+    outline: none;
+    border: none;
+}

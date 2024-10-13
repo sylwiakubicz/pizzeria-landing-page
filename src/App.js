@@ -24,6 +24,7 @@ const App = () => {
       <Navbar/>
       <SideBar/>
       <Banner />
+      <hr></hr>
       <CircularSliderSection/>
       <MenuSection />
       <SpecialsSection />
