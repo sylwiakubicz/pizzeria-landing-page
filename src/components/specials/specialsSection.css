@@ -1,4 +1,22 @@
 .special {
     height: calc(100vh - 7rem);
     background-color: rgba(17, 24, 33);
+    color: #fff;
+    text-align: center;
+    padding-left: 28rem;
+    padding-right: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.special h2 {
+    font-size: xx-large;
+    padding-bottom: 1rem;
+}
+
+.special p {
+    font-size: large;
+    width: 100rem;
 }
