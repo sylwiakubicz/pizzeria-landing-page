@@ -20,55 +20,39 @@
     transform: translateX(100%);
 }
 
-.wraper {
+.contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.sidebarFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(255, 166, 1);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    height: 8rem;
-    font-size: x-large;
-}
-
-.sidebarHeader {
-    height: 8rem;
-    font-size: xx-large;
-    font-weight: normal;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align: center;
-    align-content: center;
-    background: #585d63;
-}
-
-.cartIcon {
-    font-size: 10rem;
-    color: #585d63;
-    padding-bottom: 1rem;
-}
-
-.emptyCart {
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact h1 {
+    font-size: xx-large;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.contact ul {
+    display: flex;
     flex-direction: column;
-}
-
-.emptyCart h3 {
+    padding-bottom: 5rem;
     font-size: large;
-    font-weight: normal;
-    padding-bottom: .2rem;
 }
 
-.emptyCart p {
-    color: #585d63;
-    font-size: medium;
+.contact h2, .contact h3 {
+    font-size: x-large;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contact li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact p {
+    font-size: large;
 }

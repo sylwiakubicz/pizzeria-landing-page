@@ -2,21 +2,33 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Order Now!</h1>
+        <div className='contact'>
+            <h1 className='gradientText'>Order Now!</h1>
             <div>
                 <h2>Opening hours</h2>
-                <ul>
-                    <li>Monday to Thursday: 11:00 AM - 10:00 PM</li>
-                    <li>Friday and Saturday: 11:00 AM - 11:00 PM</li>
-                    <li>Sunday: 12:00 pM - 9:00 PM</li>
+                <ul className='openInfo'>
+                    <li>
+                        Monday to Thursday:
+                        <span>11:00 AM - 10:00 PM</span>
+                    </li>
+                    <li>
+                        Friday and Saturday: 
+                        <span>11:00 AM - 11:00 PM</span>    
+                    </li>
+                    <li>
+                        Sunday:
+                        <span>12:00 PM - 9:00 PM</span>
+                    </li>
                 </ul>
-                <h3>Call us to Order or to Book a table</h3>
-                <ul>
-                    <li>Phone: +48 123 456 789</li>
-                    <li>Mobile: +48 987 654 321 </li>
+                <h3>Call us to <span className='gradientText'>Order</span> or to <span className='gradientText'>Book a table</span></h3>
+                <ul className='phoneInfo'>
+                    <li>Phone: 
+                        <span>+48 123 456 789</span></li>
+                    <li>Mobile: 
+                        <span>+48 987 654 321 </span></li>
                 </ul>
             </div>
+            <p>Free delivery for orders over $50.00!</p>
         </div>
     )
 }
