@@ -11,18 +11,27 @@
     position: relative;
 }
 
+.carouselWrapper{
+    height: 120rem;
+    width: 120rem;
+    background-image: url(/public/images/wooden-bg-v3.png);
+    background-size: 120rem;
+    background-position: center;
+    position: relative;
+    top: -70rem;
+    border-radius: 100%;
+}
+
 .carousel {
     height: 120rem;
     width: 120rem;
-    border: 7rem solid rgb(255, 166, 57);
+    border: 7rem solid transparent;
     border-radius: 100%;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    position: relative;
     transition: transform 1s;
-    top: -70rem;
 }
 
 .slide {
