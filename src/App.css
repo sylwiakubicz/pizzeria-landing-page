@@ -43,3 +43,8 @@ hr {
     outline: none;
     border: none;
 }
+
+.scrollDisabled {
+    height: calc(100vh -  7rem);
+    overflow: hidden;
+}

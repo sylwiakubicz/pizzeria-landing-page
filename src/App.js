@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import SideBar from './components/sidebar/SideBar'
 import MapSection from './components/map/MapSection';
 import MenuSection from './components/menu/MenuSection'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {setMenuData} from './redux/menu/menuSlice'
 import { useEffect } from 'react';
 import menuData from './api/menu.json';
@@ -14,13 +14,14 @@ import Banner from './components/banner/Banner';
 
 const App = () => {
   const dispatch = useDispatch();
+  const { showSidebar } = useSelector(state => state.toggleSidebar);
 
   useEffect(() => {
     dispatch(setMenuData(menuData.menu));
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={showSidebar ? 'scrollDisabled' : ''}>
       <Navbar/>
       <SideBar/>
       <Banner />
