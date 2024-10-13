@@ -93,10 +93,6 @@
     }
 }
 
-@media (max-width: 1024px) {
-
-}
-
 @media (max-width: 768px) {
     .menuSection {
         padding-left: 5rem;
