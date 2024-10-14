@@ -16,7 +16,7 @@
     background-size: 120rem;
     background-position: center;
     position: absolute;
-    top: -70rem;
+    top: -90rem;
     border-radius: 100%;
 }
 
@@ -91,6 +91,7 @@
     bottom: 5rem;
     display: flex;
     justify-content: space-between;
+    padding-top: 60rem;
 }
 
 .controls a {
@@ -145,6 +146,7 @@
     .carouselWrapper{
         height: 110rem;
         width: 110rem;
+        top: -85rem;
     }
     
     .carousel {
@@ -175,6 +177,9 @@
         height: 18rem;
     }
 }
+
+
+
 
 @media (max-width: 1024px) {
     .carouselWrapper{
@@ -232,6 +237,7 @@
     .controls {
         flex-wrap: wrap;
         padding-top: 60rem;
+        justify-content: center;
     }
     
     .controls a {
