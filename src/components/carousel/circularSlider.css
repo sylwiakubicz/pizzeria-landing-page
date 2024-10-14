@@ -91,7 +91,7 @@
     bottom: 5rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 60rem;
+    padding-top: 70rem;
 }
 
 .controls a {
@@ -118,8 +118,9 @@
 
 .pizzaDesc {
     position: absolute;
-    bottom: 30rem;
-    left: 28rem;
+    bottom: 25rem;
+    left: auto;
+    text-align: center;
 }
 
 .pizzaDesc h3 {
@@ -158,6 +159,10 @@
         width: 19rem;
         height: 19rem;
     }
+
+    .pizzaDesc {
+        top: 47rem;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -184,8 +189,6 @@
     
     .pizzaDesc {
         top: 47rem;
-        left: auto;
-        text-align: center;
     }
 }
 
@@ -319,7 +322,7 @@
         position: static;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 22rem;
+        padding-top: 36rem;
     }
     
     .controls a {
@@ -419,7 +422,7 @@
     }
 
     .controls {
-        padding-top: 22rem;
+        padding-top: 30rem;
     }
 
     .controls a {
