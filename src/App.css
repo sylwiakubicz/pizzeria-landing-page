@@ -49,3 +49,29 @@ hr {
     height: calc(100vh -  7rem);
     overflow: hidden;
 }
+
+section {
+    padding-left: 28rem;
+    padding-right: 28rem;
+}
+
+@media (max-width: 1400px) {
+    section {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

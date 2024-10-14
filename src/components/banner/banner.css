@@ -1,5 +1,5 @@
 .banner {
-    min-height: 65rem;
+    min-height: 70rem;
     background-color: rgba(17, 24, 33, .98);
     position: relative;
     color: #fff;
@@ -11,7 +11,7 @@
 .banner img:first-child {
     width: 100rem;
     position: absolute;
-    top: 12rem;
+    top: 20rem;
     right: 0;
 }
 
@@ -54,7 +54,7 @@
 @media (min-width: 1640px) {
     .banner img:first-child {
         width: 120rem;
-        top: 0;
+        top: 10rem;
         right: -1.5rem;
     }
 }
@@ -63,8 +63,6 @@
 @media (max-width: 1400px) {
     .banner {
         min-height: 60rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
     }
 
     .banner img:first-child {
@@ -85,8 +83,6 @@
 @media (max-width: 1024px) {
     .banner {
         min-height: 50rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
     }
 
     .banner img:first-child {
@@ -97,9 +93,6 @@
 }
 
 @media (max-width: 768px) {
-    .banner {
-    }
-
     .banner img:first-child {
         display: none;
     }
@@ -110,11 +103,6 @@
 }
 
 @media (max-width: 640px) {
-    .banner {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
     .bannerText button {
         align-self: flex-end;
     }
