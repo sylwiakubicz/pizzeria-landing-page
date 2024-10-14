@@ -27,6 +27,7 @@ a {
 
 body{
     padding-top:  7rem;
+    overflow-x: hidden;
 }
 
 .gradientText {

@@ -1,5 +1,5 @@
 .banner {
-    height: 70rem;
+    min-height: 65rem;
     background-color: rgba(17, 24, 33, .98);
     position: relative;
     color: #fff;
@@ -9,10 +9,10 @@
 }
 
 .banner img:first-child {
-    width: 150rem;
+    width: 100rem;
     position: absolute;
-    top: -10rem;
-    right: -4rem;
+    top: 12rem;
+    right: 0;
 }
 
 .bannerText {
@@ -49,4 +49,83 @@
 .bannerText button:hover {
     filter: drop-shadow(0 0 15px rgba(253, 202, 34, .7));
     scale: 1.05;
+}
+
+@media (min-width: 1640px) {
+    .banner img:first-child {
+        width: 120rem;
+        top: 0;
+        right: -1.5rem;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .banner {
+        min-height: 60rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .banner img:first-child {
+        width: 100rem;
+        top: 12rem;
+        right: -1.5rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .banner img:first-child {
+        width: 90rem;
+        top: 17rem;
+        right: -1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        min-height: 50rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .banner img:first-child {
+        width: 70rem;
+        top: 17rem;
+        right: -1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+    }
+
+    .banner img:first-child {
+        display: none;
+    }
+    
+    .bannerText h1 {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bannerText button {
+        align-self: flex-end;
+    }
+
+    .bannerText {
+        width: 100%;
+        text-align: center;
+    }
+
+        
+    .banner p {
+        font-size: small;
+    }
 }

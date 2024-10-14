@@ -6,8 +6,8 @@
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 28rem;
-    padding-right: 28rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -55,7 +55,6 @@ ul {
     border-radius: 50%;
     text-align: center;
     align-content: center;
-    margin: .7rem;
     cursor: pointer;
     color: orange;
 }
@@ -85,10 +84,7 @@ svg {
 
 
 @media (max-width: 1400px) {
-    .navbar {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
+
 }
 
 @media (max-width: 1024px) {
