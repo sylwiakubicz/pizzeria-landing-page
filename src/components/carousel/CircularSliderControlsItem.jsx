@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CircularSliderControlsItem = ({index, activeIndex, handleControlClick, imageSrc}) => {
+const CircularSliderControlsItem = ({index, activeIndex, handleControlClick, pizzaTitle, imageSrc}) => {
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -19,6 +19,7 @@ const CircularSliderControlsItem = ({index, activeIndex, handleControlClick, ima
       aria-selected={isSelected}
       role="tab">
       <img src={imageSrc} alt={`Pizza ${index + 1}`}/>
+      <p className="buttonText">{pizzaTitle}</p>
     </a>
   )
 }

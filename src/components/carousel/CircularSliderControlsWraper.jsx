@@ -18,6 +18,7 @@ const CircularSliderControlsWraper = ({activeIndex, handleControlClick}) => {
               activeIndex={activeIndex} 
               handleControlClick={handleControlClick} 
               imageSrc={pizza.image} 
+              pizzaTitle={pizza.name}
               aria-label={`Pizza ${index + 1} control`} 
               aria-selected={isSelected}/>
           )

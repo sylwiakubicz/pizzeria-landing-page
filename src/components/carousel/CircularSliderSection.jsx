@@ -14,15 +14,15 @@ const CircularSliderSection = () => {
   }, [j.current])
   return (
     <section className='slideSection' id="pizzas" aria-labelledby="menu-title">
-      <h2 id="menu-title" className="visually-hidden">Menu</h2>
-    <div className="carouselWrapper">
-      <CircularSliderWraper 
-        rotate={rotate} 
-        activeIndex={j.current} 
-        handleMauseEnter={handleMauseEnter} 
-        handleMauseLeave={handleMauseLeave} 
-        aria-label="Circular slider showcasing menu items"/>
-    </div>
+      {/* <h2 id="menu-title" className="visually-hidden">Menu</h2> */}
+      <div className="carouselWrapper">
+        <CircularSliderWraper 
+          rotate={rotate} 
+          activeIndex={j.current} 
+          handleMauseEnter={handleMauseEnter} 
+          handleMauseLeave={handleMauseLeave} 
+          aria-label="Circular slider showcasing menu items"/>
+      </div>
       <PizzaDesc currentPizzaIndex={j.current - 1}/>
       <CircularSliderControlsWraper 
         activeIndex={j.current} 
