@@ -163,7 +163,6 @@
         height: 100rem;
         width: 100rem;
         top: -65rem;
-
     }
     
     .carousel {
@@ -178,14 +177,84 @@
 }
 
 @media (max-width: 1024px) {
+    .carouselWrapper{
+        height: 85rem;
+        width: 85rem;
+        top: -65rem;
+    }
+    
+    .carousel {
+        height: 85rem;
+        width: 85rem;
+    }   
+    
+    .slide {
+        width: 14rem;
+        height: 14rem;
+    }
 
+    .slide:nth-child(1) {
+        bottom: -19rem;
+    }
+    
+    .slide:nth-child(2) {
+        left: -5rem;
+        bottom: -5rem;
+    }
+    
+    .slide:nth-child(3) {
+        left: -19rem;
+    }
+    
+    .slide:nth-child(4) {
+        left: -5rem;
+        top: -5rem;
+    }
+    
+    .slide:nth-child(5) {
+        top: -19rem;
+    }
+    
+    .slide:nth-child(6) {
+        right: -5rem;
+        top: -5rem;
+    }
+    
+    .slide:nth-child(7) {
+        right: -19rem;
+    }
+    
+    .slide:nth-child(8) {
+        right: -5rem;
+        bottom: -5rem;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+        padding-top: 60rem;
+    }
+    
+    .controls a {
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .controls img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .pizzaDesc {
+        top: 45rem;
+        left: auto;
+    }
 }
 
 @media (max-width: 768px) {
     .carouselWrapper{
         height: 70rem;
         width: 70rem;
-        top: -50rem;
+        top: -52rem;
     }
     
     .carousel {
@@ -238,7 +307,7 @@
         position: static;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 30rem;
+        padding-top: 22rem;
     }
     
     .controls a {
@@ -271,7 +340,7 @@
     }
 
     .pizzaDesc {
-        top: 40rem;
+        top: 37rem;
         left: auto;
         bottom: 0;
         height: fit-content;
@@ -288,7 +357,7 @@
     .carouselWrapper{
         height: 50rem;
         width: 50rem;
-        top: -40rem;
+        top: -38rem;
     }
     
     .carousel {
