@@ -164,7 +164,7 @@
     .carouselWrapper{
         height: 100rem;
         width: 100rem;
-        top: -65rem;
+        top: -75rem;
     }
     
     .carousel {
@@ -176,10 +176,18 @@
         width: 18rem;
         height: 18rem;
     }
+
+    .controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pizzaDesc {
+        top: 47rem;
+        left: auto;
+        text-align: center;
+    }
 }
-
-
-
 
 @media (max-width: 1024px) {
     .carouselWrapper{
@@ -235,9 +243,7 @@
     }
 
     .controls {
-        flex-wrap: wrap;
         padding-top: 60rem;
-        justify-content: center;
     }
     
     .controls a {
