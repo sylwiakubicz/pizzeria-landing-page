@@ -183,20 +183,105 @@
 
 @media (max-width: 768px) {
     .carouselWrapper{
-        height: 90rem;
-        width: 90rem;
-        top: -60rem;
+        height: 70rem;
+        width: 70rem;
+        top: -50rem;
     }
     
     .carousel {
-        height: 90rem;
-        width: 90rem;
+        height: 70rem;
+        width: 70rem;
     }   
     
     .slide {
-        width: 17rem;
-        height: 17rem;
+        width: 12rem;
+        height: 12rem;
     }
+
+    .slide:nth-child(1) {
+        bottom: -17rem;
+    }
+    
+    .slide:nth-child(2) {
+        left: -5rem;
+        bottom: -5rem;
+    }
+    
+    .slide:nth-child(3) {
+        left: -17rem;
+    }
+    
+    .slide:nth-child(4) {
+        left: -5rem;
+        top: -5rem;
+    }
+    
+    .slide:nth-child(5) {
+        top: -17rem;
+    }
+    
+    .slide:nth-child(6) {
+        right: -5rem;
+        top: -5rem;
+    }
+    
+    .slide:nth-child(7) {
+        right: -17rem;
+    }
+    
+    .slide:nth-child(8) {
+        right: -5rem;
+        bottom: -5rem;
+    }
+
+    .controls {
+        position: static;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 30rem;
+    }
+    
+    .controls a {
+        margin: .5rem;
+        width: 48%;
+        height: 5rem;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 4.5rem;
+    }
+    
+    .controls img {
+        width: 4.5rem;
+        height: 4.5rem;
+        position: absolute;
+        top: .25rem;
+        left: .25rem;
+    }
+
+    .controls .buttonText {
+        display: block;
+        font-size: large;
+    }
+
+    .pizzaDesc h3 {
+        display: none;
+    }
+
+    .pizzaDesc {
+        top: 40rem;
+        left: auto;
+        bottom: 0;
+        height: fit-content;
+    }
+
+    .pizzaDesc p {
+        text-align: center;
+        font-size: large;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -253,53 +338,18 @@
     }
 
     .controls {
-        /* display: none; */
+        padding-top: 22rem;
     }
 
-    .pizzaDesc h3 {
-        display: none;
+    .controls a {
+        width: 100%;
     }
 
     .pizzaDesc {
         top: 25rem;
-        left: auto;
-        bottom: 0;
-        height: fit-content;
     }
 
     .pizzaDesc p {
-        text-align: center;
         font-size: medium;
-    }
-
-    .controls {
-        position: static;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-top: 30rem;
-    }
-    
-    .controls a {
-        margin: .5rem;
-        width: 100%;
-        height: 5rem;
-        background-color: #fff;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .controls img {
-        width: 4.5rem;
-        height: 4.5rem;
-        position: absolute;
-        top: .25rem;
-        left: .25rem;
-    }
-
-    .controls .buttonText {
-        display: block;
-        font-size: large;
     }
 }
