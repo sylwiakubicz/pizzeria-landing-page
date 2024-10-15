@@ -41,7 +41,7 @@ const Navbar = ({setShowNvabarMenu, showNvabarMenu}) => {
             {/* screen width < 1024px */}
 
             <div className="dropdownMenu">
-            <ul className='navDropdownList' style={showNavbarMenu ? { right: 0 } : {right: -500}}>
+            <ul className='navDropdownList' style={showNavbarMenu ? { right: '0' } : {right: '-100%'}}>
                 <li>
                     <a href='#home' className={activeSection === 'home' ? 'gradientText' : ''} aria-label="Go to Home section" onClick={() => dispatch(navbarToggleAction())}>Home</a>
                 </li>
