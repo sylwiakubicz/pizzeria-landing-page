@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .contact h1 {
@@ -55,4 +56,50 @@
 
 .contact p {
     font-size: large;
+}
+
+@media (max-width: 1024px) {
+    .sideBarContainer {
+        width: 100%;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .contact h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .sideBarContainer {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .contact {
+        align-items: normal;
+    }
+}
+
+@media (max-width: 640px) {
+    .sideBarContainer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .contact h1 {
+        font-size: x-large;
+    }
+    
+    .contact p {
+        font-size: medium;
+    }
+
+    .contact h2, .contact h3  {
+        font-size: large;
+    }
+
+    .contact ul {
+        font-size: medium;
+    }
 }
