@@ -12,17 +12,19 @@ import menuData from './api/menu.json';
 import SpecialsSection from './components/specials/SpecialsSection';
 import Banner from './components/banner/Banner';
 
+
 const App = () => {
   const dispatch = useDispatch();
   const { showSidebar } = useSelector(state => state.toggleSidebar);
+  const { showNavbarMenu } = useSelector(state => state.navbarToggle);
 
   useEffect(() => {
     dispatch(setMenuData(menuData.menu));
   }, [dispatch]);
 
   return (
-    <div className={showSidebar ? 'scrollDisabled' : ''}>
-      <Navbar/>
+    <div className={showSidebar || showNavbarMenu ? 'scrollDisabled' : ''}>
+      <Navbar />
       <SideBar/>
       <Banner />
       <hr></hr>
