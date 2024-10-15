@@ -49,7 +49,7 @@ ul {
     font-size: large;
 }
 
-.navIcons li {
+.navIcons li:nth-child(2) {
     width: 3.5rem;
     height: 3.5rem;
     border: .15rem  solid orange;
@@ -58,6 +58,12 @@ ul {
     align-content: center;
     cursor: pointer;
     color: orange;
+}
+
+
+.navIcons li {
+    align-content: center;
+    cursor: pointer;
 }
 
 .navDropdownList {
@@ -80,7 +86,6 @@ ul {
 }
 
 .btnToggle {
-    cursor: pointer;
     font-size: x-large;
     display: none;
 }
@@ -113,11 +118,6 @@ svg {
     outline: none;
 }
 
-
-@media (max-width: 1400px) {
-
-}
-
 @media (max-width: 1024px) {
     .navbar {
         padding-left: 5rem;
@@ -130,6 +130,11 @@ svg {
 
     .navList {
         display: none;
+    }
+
+    .navIcons li{
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 

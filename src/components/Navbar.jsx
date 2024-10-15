@@ -40,10 +40,6 @@ const Navbar = ({setShowNvabarMenu, showNvabarMenu}) => {
 
             {/* screen width < 1024px */}
 
-            <div className="btnToggle" onClick={() => dispatch(navbarToggleAction())}>
-                <FontAwesomeIcon icon={faBars}/>
-            </div>
-
             <div className="dropdownMenu">
             <ul className='navDropdownList' style={showNavbarMenu ? { right: 0 } : {right: -500}}>
                 <li>
@@ -65,6 +61,9 @@ const Navbar = ({setShowNvabarMenu, showNvabarMenu}) => {
             </div>
 
             <ul className='navIcons'>
+                <li className="btnToggle" onClick={() => dispatch(navbarToggleAction())}>
+                    <FontAwesomeIcon icon={faBars}/>
+                </li>
                 <li>
                     <FontAwesomeIcon 
                         icon={faPhone}  
