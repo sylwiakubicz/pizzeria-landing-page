@@ -1,6 +1,5 @@
 .slideSection {
     background-color: rgba(17, 24, 33);
-    min-height: calc(100vh - 7rem);
     display: flex;
     flex-direction: column;
     align-items: center;
