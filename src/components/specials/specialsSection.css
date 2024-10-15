@@ -16,5 +16,15 @@
 
 .special p {
     font-size: large;
-    width: 100rem;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .special h2 {
+        font-size: x-large;
+    }
+
+    .special p {
+        font-size: small;
+    }
 }
