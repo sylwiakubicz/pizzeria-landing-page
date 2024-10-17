@@ -26,6 +26,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 4rem;
+    color: #111821;
 }
 
 .ofertWraper {
@@ -35,10 +36,57 @@
     margin-right: 2rem;
     margin-left: 2rem;
     border-radius: 5%;
+    padding: 1rem;
+}
+
+.ofertWraper h2 {
+    font-size: x-large;
+}
+.ofertWraper p {
+    text-align: left;
+    font-size: medium;
 }
 
 .ofertWraper:nth-of-type(2) {
     scale: 1.1;
+    position: relative;
+}
+
+.halfPizzaWraper {
+    display: flex;
+    rotate: 45deg;
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+}
+
+.halfPizza {
+    height: 20rem;
+    width: 10rem;
+    background-size: 20rem 20rem;
+}
+
+.halfPizzaLeft {
+    background-image: url(/public/images/pizza_3.png);
+    border-radius: 10rem 0 0 10rem;
+}
+
+.halfPizzaRight {
+    background-image: url(/public/images/pizza_6.png);
+    border-radius: 0 10rem 10rem 0;
+    background-position: 10rem;
+}
+
+.dividePizzas {
+    width: .7rem;
+    height: 25rem;
+    background-color: #111821;
+    outline: none;
+    border: 1px solid #111821;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 2.5rem;
+
 }
 
 @media (max-width: 640px) {
